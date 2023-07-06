@@ -1,0 +1,28 @@
+.hamburger-menu .menu {
+    display: none;
+}
+
+.hamburger-menu input[type="checkbox"]:checked~.menu {
+    display: block;
+}
+
+.hamburger-menu .menu-icon {
+    cursor: pointer;
+}
+
+.hamburger-menu .menu-icon::before,
+.hamburger-menu .menu-icon::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+.hamburger-menu .menu-icon::before {
+    transform: translateY(-8px);
+}
+
+.hamburger-menu .menu-icon::after {
+    transform: translateY(8px);
+}
